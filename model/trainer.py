@@ -12,11 +12,7 @@ class TrafficModelTrainer:
 
     def preprocess(self):
         df = self.train_df.copy()
-        df["timestamp"] = pd.to_datetime(df["date"])
-        df["hour"] = df["timestamp"].dt.hour
-        df["dayofweek"] = df["timestamp"].dt.weekday
-        df["is_weekend"] = df["dayofweek"] >= 5
-        df["is_peak_hour"] = df["hour"].apply(lambda h: 7 <= h <= 9 or 16 <= h <= 19)
+        df["is_weekend"] = df["weekday"] >= 5
 
         df["street_type"] = df["street_type"].fillna("unknown")
         df["street_type_encoded"] = self.street_encoder.fit_transform(df["street_type"])
@@ -27,8 +23,7 @@ class TrafficModelTrainer:
     def train(self):
         self.preprocess()
         X = self.train_df[[
-            "hour", "dayofweek", "is_weekend", "is_peak_hour",
-            "length", "max_velocity", "street_type_encoded"
+            "weekday", "is_weekend", "length", "max_velocity", "street_type_encoded"
         ]]
         y = self.train_df["LOS"]
         self.model.fit(X, y)

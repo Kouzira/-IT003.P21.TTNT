@@ -34,8 +34,7 @@ class ETAPredictor:
                 hour, dayofweek, int(is_weekend), int(is_peak_hour),
                 segment_info["length"], segment_info["max_velocity"], street_type_encoded
             ]], columns=[
-                "hour", "dayofweek", "is_weekend", "is_peak_hour",
-                "length", "max_velocity", "street_type_encoded"
+                "weekday", "is_weekend", "length", "max_velocity", "street_type_encoded"
             ])
 
             status_pred = self.model.predict(features)[0]
