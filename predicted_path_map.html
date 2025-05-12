@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_52176a204e49f530fba1e58fd75d0961 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_52176a204e49f530fba1e58fd75d0961" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_52176a204e49f530fba1e58fd75d0961 = L.map(
+                "map_52176a204e49f530fba1e58fd75d0961",
+                {
+                    center: [10.860078099999999, 106.76534480000001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7134efeda751c4a142c805a92d7892f0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7134efeda751c4a142c805a92d7892f0.addTo(map_52176a204e49f530fba1e58fd75d0961);
+        
+    
+            var marker_d83d6eb6180614e498bf1ab0fc343074 = L.marker(
+                [10.8415062, 106.7687324],
+                {
+}
+            ).addTo(map_52176a204e49f530fba1e58fd75d0961);
+        
+    
+        var popup_c6eb940c7e222bb190f53198cda9bba9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4630b6b5739618cac9ae794ee8d482ba = $(`<div id="html_4630b6b5739618cac9ae794ee8d482ba" style="width: 100.0%; height: 100.0%;">Nguyễn Văn Bá (Start)</div>`)[0];
+                popup_c6eb940c7e222bb190f53198cda9bba9.setContent(html_4630b6b5739618cac9ae794ee8d482ba);
+            
+        
+
+        marker_d83d6eb6180614e498bf1ab0fc343074.bindPopup(popup_c6eb940c7e222bb190f53198cda9bba9)
+        ;
+
+        
+    
+    
+            var marker_f9f437c839783f350f04e667e5f9adc1 = L.marker(
+                [10.8424219, 106.769254],
+                {
+}
+            ).addTo(map_52176a204e49f530fba1e58fd75d0961);
+        
+    
+        var popup_6f272293ee25194cea11c4623e6adc73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2d4465aaff75a11992654464600a3b8 = $(`<div id="html_b2d4465aaff75a11992654464600a3b8" style="width: 100.0%; height: 100.0%;">Nguyễn Văn Bá (End)</div>`)[0];
+                popup_6f272293ee25194cea11c4623e6adc73.setContent(html_b2d4465aaff75a11992654464600a3b8);
+            
+        
+
+        marker_f9f437c839783f350f04e667e5f9adc1.bindPopup(popup_6f272293ee25194cea11c4623e6adc73)
+        ;
+
+        
+    
+    
+            var poly_line_605bb538542ebaf57b59a60df373eaf7 = L.polyline(
+                [[10.8415062, 106.7687324], [10.8424219, 106.769254]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_52176a204e49f530fba1e58fd75d0961);
+        
+    
+            var marker_9740522d6a73d5f61e16f780de51cd1c = L.marker(
+                [10.87865, 106.7619572],
+                {
+}
+            ).addTo(map_52176a204e49f530fba1e58fd75d0961);
+        
+    
+        var popup_96dc6f451c96019bc7e01137c36c7b74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_def8a02c2df8a68e357a421e3c29d2f2 = $(`<div id="html_def8a02c2df8a68e357a421e3c29d2f2" style="width: 100.0%; height: 100.0%;">Đường số 5 (Start)</div>`)[0];
+                popup_96dc6f451c96019bc7e01137c36c7b74.setContent(html_def8a02c2df8a68e357a421e3c29d2f2);
+            
+        
+
+        marker_9740522d6a73d5f61e16f780de51cd1c.bindPopup(popup_96dc6f451c96019bc7e01137c36c7b74)
+        ;
+
+        
+    
+    
+            var marker_d1f07657ce22c9a831aec11dfe33d28f = L.marker(
+                [10.8788077, 106.7621428],
+                {
+}
+            ).addTo(map_52176a204e49f530fba1e58fd75d0961);
+        
+    
+        var popup_54f0546ab3025088ea09e2d3de244f99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f14d3e37b6fc7fce8daeaf53cf76f872 = $(`<div id="html_f14d3e37b6fc7fce8daeaf53cf76f872" style="width: 100.0%; height: 100.0%;">Đường số 5 (End)</div>`)[0];
+                popup_54f0546ab3025088ea09e2d3de244f99.setContent(html_f14d3e37b6fc7fce8daeaf53cf76f872);
+            
+        
+
+        marker_d1f07657ce22c9a831aec11dfe33d28f.bindPopup(popup_54f0546ab3025088ea09e2d3de244f99)
+        ;
+
+        
+    
+    
+            var poly_line_45b68c1bf5a6ec1023249d64e9f81f58 = L.polyline(
+                [[10.87865, 106.7619572], [10.8788077, 106.7621428]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_52176a204e49f530fba1e58fd75d0961);
+        
+</script>
+</html>
